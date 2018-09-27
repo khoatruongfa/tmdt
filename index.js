@@ -4,8 +4,9 @@ var bodyParser = require('body-parser');
 var app = express();
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 
-app.listen(3000, function(){
-	console.log('connect successfully');
+var port = Number(process.env.PORT || 8888);
+app.listen(port, function () {
+    console.log("server is runing on localhost:8888");
 });
 
 // config ejs
