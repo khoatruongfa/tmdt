@@ -1,0 +1,26 @@
+<% 
+	var n = '<div style="color:red">say hi!!!</div>';
+	var age = 15;
+%>
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>
+		Welcome to first page with
+		<span style="color:red; font-weight:bold">NODEJS</span>
+	</h1>
+	<h2>
+		<%- n; %>
+	</h2>
+	
+		<% if (age < 18) { %>
+			<h1> age is smaller than 18 </h1>
+		<% } else { %>
+		   	<h1> age is bigger than 18 </h1>
+		<% } %>
+	
+</body>
+</html>
